@@ -2,45 +2,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray background for contrast */
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically fill columns */
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
     grid-gap: 15px; /* Space between grid items */
-    padding: 20px;
+    padding: 20px; /* Padding around the grid */
 }
 
 .link {
-    position: relative;
-    width: 100%; /* Takes the full width of the cell */
-    max-width: 400px; /* Allows links to expand up to 400 pixels */
-    height: 400px; /* Keep each link square */
+    position: relative; /* Position for overlay elements */
+    width: 100%; /* Full width of the grid cell */
+    max-width: 400px; /* Maximum width of each link */
+    height: 400px; /* Fixed height for square shape */
     margin: 15px auto; /* Center the links and add vertical spacing */
-    text-decoration: none;
-    color: #fff;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color */
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    transition: transform 0.3s; /* Smooth scale on hover */
 }
 
 .link img {
-    width: 100%;  /* Ensures the image fills the link */
-    height: 100%; /* Ensures the image fills the link */
-    object-fit: cover; /* Image covers the area while maintaining aspect ratio */
+    width: 100%;  /* Image takes full width of link */
+    height: 100%; /* Image takes full height of link */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
 }
 
 .link span {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
+    position: absolute; /* Absolute positioning for overlay */
+    bottom: 10px; /* Distance from the bottom */
+    left: 10px; /* Distance from the left */
+    right: 10px; /* Distance from the right */
+    background: rgba(0, 0, 0, 0.6); /* Translucent black background for text */
+    padding: 5px; /* Padding inside the text box */
+    text-align: center; /* Center text */
+    font-weight: bold; /* Bold text */
 }
 
 .link:hover {
@@ -59,3 +59,4 @@ body {
         grid-template-columns: 1fr; /* One column on mobile */
     }
 }
+
