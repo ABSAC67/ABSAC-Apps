@@ -7,17 +7,17 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum width */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically fill columns */
     grid-gap: 15px; /* Space between grid items */
     padding: 20px;
 }
 
 .link {
     position: relative;
-    width: 100%; /* Allows the link to take full width of the container */
-    max-width: 400px; /* Maximum size of 400 pixels */
-    height: 400px; /* Fixed height to maintain squares */
-    margin: 15px;
+    width: 100%; /* Takes the full width of the cell */
+    max-width: 400px; /* Allows links to expand up to 400 pixels */
+    height: 400px; /* Keep each link square */
+    margin: 15px auto; /* Center the links and add vertical spacing */
     text-decoration: none;
     color: #fff;
     overflow: hidden;
