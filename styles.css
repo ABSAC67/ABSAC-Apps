@@ -1,3 +1,11 @@
+h1 {
+    text-align: center;   /* Center the heading */
+    font-size: 2.5em;     /* Increase the font size */
+    color: #333;          /* Optional: change the text color (e.g., dark gray) */
+    margin-top: 20px;     /* Optional: add margin above the heading */
+    margin-bottom: 20px;  /* Optional: add margin below the heading */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
