@@ -7,7 +7,7 @@ body {
 
 .container {
     display: grid; /* Use CSS Grid layout */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive columns */
     grid-gap: 15px; /* Space between grid items */
     padding: 20px; /* Padding around the grid */
 }
@@ -35,14 +35,17 @@ body {
 .link span {
     position: absolute; /* Absolute positioning for overlay */
     bottom: 10px; /* Distance from the bottom */
-    left: 10px; /* Distance from the left */
-    right: 10px; /* Distance from the right */
+    left: 50%; /* Center the title box */
+    transform: translateX(-50%); /* Center the title box */
     background: rgba(0, 0, 0, 0.6); /* Translucent black background for text */
-    padding: 5px; /* Padding inside the text box */
+    width: 80%; /* Consistent width for title boxes */
+    max-width: 300px; /* Maximum width (adjust as necessary) */
+    height: 40px; /* Fixed height for all title boxes */
     text-align: center; /* Center text */
     font-weight: bold; /* Bold text */
-    font-size: 1.5em; /* Increase font size */
+    font-size: 1.5em; /* Font size for titles */
     color: #fff; /* Text color (white) */
+    line-height: 40px; /* Center text vertically */
 }
 
 .link:hover {
