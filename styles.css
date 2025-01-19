@@ -7,7 +7,7 @@ body {
 
 .container {
     display: grid; /* Use CSS Grid layout */
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
     grid-gap: 15px; /* Space between grid items */
     padding: 20px; /* Padding around the grid */
 }
@@ -41,6 +41,8 @@ body {
     padding: 5px; /* Padding inside the text box */
     text-align: center; /* Center text */
     font-weight: bold; /* Bold text */
+    font-size: 1.5em; /* Increase font size */
+    color: #fff; /* Text color (white) */
 }
 
 .link:hover {
@@ -59,4 +61,3 @@ body {
         grid-template-columns: 1fr; /* One column on mobile */
     }
 }
-
