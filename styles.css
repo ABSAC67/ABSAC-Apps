@@ -42,18 +42,20 @@ body {
 
 .link span {
     position: absolute; /* Absolute positioning for overlay */
-    bottom: 10px; /* Distance from the bottom */
+    top: 50%; /* Position from the top as a percentage of the parent height */
     left: 50%; /* Center the title box */
-    transform: translateX(-50%); /* Center the title box */
+    transform: translate(-50%, -50%); /* Center the title box */
     background: rgba(0, 0, 0, 0.6); /* Translucent black background for text */
     width: 80%; /* Consistent width for title boxes */
     max-width: 300px; /* Maximum width (adjust as necessary) */
-    height: 40px; /* Fixed height for all title boxes */
+    height: 80px; /* Fixed height for all title boxes */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     text-align: center; /* Center text */
     font-weight: bold; /* Bold text */
-    font-size: 1.5em; /* Font size for titles */
+    font-size: 2.0em; /* Font size for titles */
     color: #fff; /* Text color (white) */
-    line-height: 40px; /* Center text vertically */
 }
 
 .link:hover {
