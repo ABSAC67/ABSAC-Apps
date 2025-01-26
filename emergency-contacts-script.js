@@ -43,10 +43,10 @@ function displayContactDetails(row) {
 
     // Assuming corresponding details are in columns 2, 3, 4, 5
     const contactsDetails = [
-        { label: "Emer. Contact Name", value: row[17] }, // Adjust indices as needed
-        { label: "Emer. Contact Number", value: `<a href="tel:${row[18]}">${row[18]}</a>` }, // Make phone number clickable
-        { label: "Emer. Contact Address", value: row[19] },
-        { label: "Emer. Contact Email", value: `<a href="mailto:${row[20]}">${row[20]}</a>` } // Make email clickable
+        { label: "Name", value: row[17] }, // Adjust indices as needed
+        { label: "Number", value: `<a href="tel:${row[18]}">${row[18]}</a>` }, // Make phone number clickable
+        { label: "Address", value: row[19] },
+        { label: "Email", value: `<a href="mailto:${row[20]}">${row[20]}</a>` } // Make email clickable
     ];
 
     contactsDetails.forEach(contact => {
