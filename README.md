@@ -1,4 +1,4 @@
 # ABSAC-Apps
 Web page for ABSAC Apps links, intended for use on mobile devices.
 
-All icon tiles are held on imgur.com.
+Icons must be 400x400 and .png
