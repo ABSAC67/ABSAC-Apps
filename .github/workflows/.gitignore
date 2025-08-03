@@ -1,0 +1,61 @@
+# ==================================
+# macOS
+# ==================================
+# Files created by macOS
+.DS_Store
+
+# Common macOS application files
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Thumbnails
+.Spotlight-V100
+.Trashes
+
+# ==================================
+# Visual Studio and .NET (common files)
+# ==================================
+# Generated build artifacts
+[Bb]in/
+[Oo]bj/
+*.log
+*.vsix
+*.vsproj
+*.suo
+
+# Visual Studio's workspace-specific files
+.vs/
+*.user
+*.userprefs
+
+# ==================================
+# Other IDEs (if you use them on Mac)
+# ==================================
+# Visual Studio Code
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# ==================================
+# Package managers
+# ==================================
+# NuGet (for .NET projects)
+[Pp]ackages/
+*.nupkg
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# ==================================
+# Temporary and system files
+# ==================================
+*~
+*.swp
+*.bak
