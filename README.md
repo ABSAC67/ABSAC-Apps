@@ -12,3 +12,5 @@ The app is here: https://absac67.github.io/ABSAC-Apps/
 The app can be set up as a mobile icon by using the instructions at below page:
 
 https://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/
+
+Version number must be changed then push, commit and synch to push new page to browsers and bypass caching.
