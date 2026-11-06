@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Comp. Log</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        .page {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            margin: 0.4em 0 0.2em;
+        }
+
+        .intro {
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+            max-width: 46ch;
+            margin: 0 auto 24px;
+            line-height: 1.5;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #1155cc;
+            text-decoration: underline;
+        }
+
+        .platform-tabs {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .platform-tab {
+            font-family: inherit;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background: #fff;
+            color: #555;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 7px 18px;
+            border-radius: 999px;
+        }
+
+        .platform-tab.active {
+            border-color: #1155cc;
+            background: #eaf1fd;
+            color: #1155cc;
+        }
+
+        section.platform {
+            background: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+
+        .platform-heading {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+        }
+
+        .platform-heading h2 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+
+        .browser-note {
+            font-size: 12px;
+            color: #777;
+            font-weight: bold;
+        }
+
+        .platform-sub {
+            color: #555;
+            font-size: 14px;
+            margin: 0 0 20px;
+            line-height: 1.5;
+        }
+
+        .steps {
+            display: grid;
+            gap: 18px;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 140px;
+            gap: 16px;
+            align-items: start;
+            border-top: 1px solid #eee;
+            padding-top: 18px;
+        }
+
+        .step:first-child {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #333;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 8px;
+            flex: none;
+        }
+
+        .step-title {
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .step-detail {
+            margin: 8px 0 0 30px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .step-shot {
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #efefef;
+        }
+
+        .step-shot img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 480px) {
+            .step {
+                grid-template-columns: 1fr;
+            }
+
+            .step-shot {
+                max-width: 200px;
+                margin-left: 30px;
+            }
+        }
+
+        .other-devices {
+            margin-top: 24px;
+            background: #eaf1fd;
+            border: 1px solid #c9ddfb;
+            border-radius: 10px;
+            padding: 18px 20px;
+        }
+
+        .other-devices h3 {
+            margin: 0 0 6px;
+            font-size: 15px;
+            color: #0b4fb0;
+        }
+
+        .other-devices p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.55;
+            color: #1a3c6e;
+        }
+
+        .other-devices code {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1px 6px;
+            border-radius: 4px;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <a class="back-link" href="index.html">&larr; Back to ABSAC Web Applications</a>
+
+        <h1>Install Comp. Log</h1>
+        <p class="intro">
+            Get the Compressor Log app on your phone's home screen so you can log tank fills and
+            check servicing status in seconds &mdash; even with no signal.
+        </p>
+
+        <div class="platform-tabs" role="tablist">
+            <button type="button" class="platform-tab active" data-target="android">Android</button>
+            <button type="button" class="platform-tab" data-target="ios">iPhone &amp; iPad</button>
+        </div>
+
+        <section class="platform" id="android-panel">
+            <div class="platform-heading">
+                <h2>Android</h2>
+                <span class="browser-note">Using Chrome</span>
+            </div>
+            <p class="platform-sub">Takes about 30 seconds. You only need to do this once.</p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">1</span><span class="step-title">Open the app in Chrome</span>
+                        <p class="step-detail">
+                            Tap the address bar at the top of Chrome, type
+                            <code>compressor-log.web.app</code>, then press Go. Once it loads, tap the
+                            <strong>&#8942;</strong> (three dots) in the top-right corner.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/android-1-menu.jpg" alt="Compressor Log open in Chrome with the three-dot menu button highlighted"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">2</span><span class="step-title">Tap "Install and create shortcut"</span>
+                        <p class="step-detail">
+                            It's near the bottom of the menu, just above Desktop site.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/android-2-install-option.jpg" alt="Chrome menu open showing Install and create shortcut"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">3</span><span class="step-title">Choose "Install"</span>
+                        <p class="step-detail">
+                            Not "Create shortcut" &mdash; Install is what gives the app its own icon
+                            and lets it work properly offline.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/android-3-install-dialog.jpg" alt="Install and create shortcut dialog with Install option"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">4</span><span class="step-title">Done &mdash; find it on your home screen</span>
+                        <p class="step-detail">
+                            The Compressor Log icon now sits alongside your other apps. Open it from
+                            there every time, not from Chrome.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/android-4-home-screen.jpg" alt="Compressor Log icon installed on the Android home screen"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="platform" id="ios-panel" hidden>
+            <div class="platform-heading">
+                <h2>iPhone &amp; iPad</h2>
+                <span class="browser-note">Using Safari</span>
+            </div>
+            <p class="platform-sub">
+                Takes about 30 seconds. Must be done in Safari &mdash; Chrome on iPhone can't install
+                it properly.
+            </p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">1</span><span class="step-title">Open the app in Safari</span>
+                        <p class="step-detail">
+                            Tap the address bar at the bottom of the screen, type
+                            <code>compressor-log.web.app</code>, then tap Go.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/ios-1-address-bar.jpg" alt="Compressor Log open in Safari with the address bar visible"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">2</span><span class="step-title">Open the Share menu</span>
+                        <p class="step-detail">
+                            Tap the small icon at the left of the address bar, then tap
+                            <strong>Share</strong> in the menu that opens. (On some iPhones a Share
+                            icon sits directly in the toolbar instead &mdash; tap that if you see it.)
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/ios-2-page-menu.jpg" alt="Safari page menu with the Share option"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">3</span><span class="step-title">Tap "Add to Home Screen"</span>
+                        <p class="step-detail">
+                            In the share sheet, scroll down until you see it, and tap it.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/ios-3-share-sheet.jpg" alt="Share sheet showing Add to Home Screen"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">4</span><span class="step-title">Confirm and tap "Add"</span>
+                        <p class="step-detail">
+                            Leave <strong>Open as Web App</strong> switched on &mdash; that's what
+                            makes it launch full-screen and work offline, rather than just as a
+                            bookmark. Then tap <strong>Add</strong> top-right.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/ios-4-add-dialog.jpg" alt="Add to Home Screen confirmation with Open as Web App switched on"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-text">
+                        <span class="step-num">5</span><span class="step-title">Done &mdash; find it on your home screen</span>
+                        <p class="step-detail">
+                            The Compressor Log icon now sits alongside your other apps. Open it from
+                            there every time, not from Safari.
+                        </p>
+                    </div>
+                    <div class="step-shot"><img src="images/compLogInstall/ios-5-home-screen.jpg" alt="Compressor Log icon installed on the iPhone home screen"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="other-devices">
+            <h3>Using something else?</h3>
+            <p>
+                A different Android browser, a Windows phone, a laptop or desktop, or anything else
+                not covered here &mdash; post in <code>#general</code> on Slack and someone will help
+                you get it installed.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll('.platform-tab');
+            var panels = {
+                android: document.getElementById('android-panel'),
+                ios: document.getElementById('ios-panel'),
+            };
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(function (t) { t.classList.remove('active'); });
+                    tab.classList.add('active');
+                    Object.keys(panels).forEach(function (key) {
+                        panels[key].hidden = key !== tab.dataset.target;
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
